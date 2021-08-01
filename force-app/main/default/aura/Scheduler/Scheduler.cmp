@@ -1,0 +1,12 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global" >
+    
+
+
+        <div class="slds-grid slds-wrap" style="backgroud-color:orange;">
+            <div class="slds-col slds-size--1-of-1" style="backgroud-color:rgb(255, 0, 0);">
+                1
+            </div>
+        </div>
+
+
+</aura:component>

@@ -1,0 +1,67 @@
+<aura:component implements="forceCommunity:themeLayout">
+
+    <ltng:require styles="{!$Resource.BootstrapGrid}" />
+
+
+
+    <aura:attribute name="search" type="Aura.Component[]"/>
+    <aura:attribute name="profileMenu" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="sidebarFooter" type="Aura.Component[]"/>
+
+
+    <header>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-3"><div class="teste"><div class="logoContainer"></div></div></div>
+                <div class="col-9" style="background-color: red;">
+                    <div>
+                        <nav class="community-navbar">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Agendamentos</a></li>
+                                <li><a href="#">Casos</a></li>
+                                <li><a href="#">Artigos</a></li>
+                                <li><a href="#">Suporte</a></li>
+                            </ul>
+                        </nav>
+                        
+                        <div class="community-profile">
+                            {!v.profileMenu}
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <div class="slds-grid slds-grid--align-center">
+        <div class="slds-col">
+
+
+
+
+            <div class="slds-grid slds-grid--vertical">
+                <div class="slds-col">
+                	<div class="logoContainer"></div>
+                </div>
+                <div class="slds-col">
+                    {!v.search}
+                </div>
+                <div class="slds-col">
+                  <c:verticalNav></c:verticalNav>
+                    
+                </div>
+                <div class="slds-col">
+                    {!v.sidebarFooter}
+                </div>
+            </div>
+        </div>
+        <div class="slds-col content">
+            {!v.body}
+        </div>
+    </div>
+</aura:component>

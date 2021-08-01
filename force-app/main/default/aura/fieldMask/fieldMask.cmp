@@ -1,0 +1,53 @@
+<aura:component >
+    
+    
+    	<div class="slds-card slds-p-around--xx-large">
+            <div class="slds-card__header slds-grid">
+                <div class="slds-media slds-media--center slds-has-flexi-truncate">
+                  <div class="slds-media__figure">
+                    <lightning:icon iconName="standard:contact" alternativeText="contact" title="contact" />
+                  </div>
+                  <div class="slds-media__body">
+                    <h2 class="slds-text-heading--small slds-truncate">Contact</h2>
+                  </div>
+                </div>     
+            </div> 
+            
+      		<section class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-3">
+                <span onkeydown="{!c.keyMask}" class="phone">
+                    <lightning:input name="phone"
+                               required="true"
+                               label="Telefone"
+                               placeholder="(DDD)00000-0000"
+                               aura:id="phone"
+                               type="tel"
+                               autocomplete = "off"/>            
+                 </span>
+        	</section> 
+            
+            <section class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-3">
+                <span onkeydown="{!c.keyMask}" class="cpf">
+                    <lightning:input name="phone"
+                                   required="true"
+                                   label="CPF"
+                                   placeholder="000.000.000-00"
+                                   aura:id="cpf"                                   
+                                   type="text"
+                                   autocomplete = "off"/>
+               </span>                
+        	</section> 
+            
+    	</div>
+    
+    
+    
+  
+
+    
+    
+    
+    
+
+      
+
+</aura:component>

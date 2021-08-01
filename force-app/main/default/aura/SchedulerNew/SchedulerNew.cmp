@@ -1,0 +1,16 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes" access="global" >
+   
+    <aura:attribute name="progressIndicatorFlag" type="String" />
+    <aura:attribute name="currentSteps" type="String" default="1" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <lightning:progressIndicator currentStep="{!v.currentSteps}" hasError = "{!v.isError}" variant = "base">
+        <lightning:progressStep label="Step One" value="1"/>
+        <lightning:progressStep label="Step two" value="2"/>
+        <lightning:progressStep label="Step three" value="3"/> 
+       </lightning:progressIndicator>
+
+
+
+ 
+</aura:component>

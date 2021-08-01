@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Conditiona rendering">
+        <div class="slds-var-m-around_small">
+            <lightning-button variant="brand" 
+            label="Show data"
+            title="Primary action"
+            onclick={handleClick} 
+            class="slds-m-left_x-small"></lightning-button>
+
+            <template if:true={isVisible}>
+                <div>Welcome to zero Hero series</div>
+            </template>
+
+            
+
+        </div>
+    </lightning-card>
+</template>

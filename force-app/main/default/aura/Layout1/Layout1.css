@@ -1,0 +1,34 @@
+.THIS .contentPanel:before,
+.THIS .contentPanel:after {
+    content: " ";
+    display: table;
+}
+.THIS .contentPanel:after {
+    clear: both;
+}
+.THIS .centerheader {
+    width: 100%;
+}
+.THIS .bottonfooter {
+    float: left;
+    width: 100%;
+}
+
+.THIS .left {
+    width: 25%;
+}
+.THIS .right {
+    width: 25%;
+}
+.THIS .center {
+    width: 50%;
+}
+.THIS .column {
+    float: left;
+    width: 33.33%;
+}
+.THIS .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
