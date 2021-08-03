@@ -13,7 +13,7 @@ jobs:
       image: salesforce/salesforcedx
 
     steps:
-     - users: action/checkout@v2
+     - users: actions/checkout@v2
 
      - name: VALIDATE PACKAGE
         run: |
@@ -23,5 +23,5 @@ jobs:
           sfdx force:source:push -u CIOrg
           sfdx force:apex:test:run -l RunLocalTests -u CIOrg -c -r human -w 2 --verbose
           sfdx force:org:delete -u CIOrg -p
-          
+
 
